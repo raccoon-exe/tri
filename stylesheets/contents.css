@@ -1,0 +1,255 @@
+/** Contents CSS
+ * Styling for Content elements. Content elements are specific chunks of information
+ * placed into a container. Content elements are not generic, but they should be
+ * flexible enough to be placed within any container.
+ */
+
+ /** Control Links
+  * A list of actions to control/modify a block. Usually placed in a block's head.
+  */
+.control_links {
+    float: left;
+    padding-top: 2px;
+    position: relative; /* IE fix */
+}
+.control_links li {
+    display: inline;
+    list-style-type: none;
+}
+
+/** Navigation Links
+ * A list of links used for navigation. Links have more vertical space plus mouseover effects.
+ */
+.navigation_links li {
+    list-style-type: none;
+    height: 100%;
+}
+.navigation_links li a {
+    display: block;
+    padding: 5px 0;
+}
+.navigation_links li a:hover {
+    background-color: #6fa6fc;
+    color: #fff;
+}
+.portlet .navigation_links li {
+    margin-left: -7px;
+}
+.portlet .navigation_links li a {
+    padding-left: 7px;
+}
+/* Nested links */
+.portlet .navigation_links ul {
+    padding-left: 17px;
+}
+
+/** Listing (Table)
+ */
+table.listing {
+    width: 100%;
+}
+table.listing th {
+    background-color: #6fa6fc;
+    border-right: 1px solid #bbdcff;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    white-space: nowrap;
+}
+table.listing th input,
+table.listing th a {
+    color: #fff;
+}
+table.listing td {
+    padding: 5px;
+}
+table.listing .divider td {
+    border-bottom: 1px solid #dfdfdf;
+    border-collapse: separate;
+    vertical-align: bottom;
+}
+table.listing input {
+    vertical-align: middle; /* Makes buttons line up with text in a cell */
+}
+table.listing .even {
+    background-color: #f1f8fe;
+}
+table.listing .stretch {
+    width: 100%;
+}
+table.listing .date {
+    white-space: nowrap;
+}
+table.listing .actions {
+    width: 0px;
+    white-space: nowrap;
+}
+table.listing li {
+    list-style-position: inside;
+}
+table.listing table.nested td {
+  border-bottom: none;
+  padding: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+/** Loading Indicator
+ * Color and styling for the loading indicator.
+*/
+.loading {
+    background-color: #ffffff;
+    border-color: #dddddd;
+}
+
+/** Notice
+ * Color styling for notice messages.
+ */
+.notice {
+    background-color: #f6fbf7;
+    border-color: #98d39d;
+}
+
+/** Alert
+ * Color styling for alert messages.
+ */
+.alert {
+    background-color: #ffffcd;
+    border-color: #dddd33;
+}
+
+/** Error
+ * Color and styling for error messages.
+*/
+.error {
+    background-color: #ffcdcd;
+    border-color: #dd3333;
+}
+.error ul {
+    margin-left: 35px;
+}
+
+/** App Badge
+ * Add some seperation from the app badge and whatever is below it
+*/
+.app_badge {
+  margin-bottom: 20px;
+}
+
+/** Icons
+ * Happy little 16x16 pictures
+ */
+.icon {
+    margin-right: 5px;
+    padding-left: 20px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.icon_add {
+    background-image: url('../images/icons/add.png');
+}
+.icon_alert {
+    background-image: url('../images/icons/warning.png');
+}
+.icon_basket {
+    background-image: url('../images/icons/basket.png');
+}
+.icon_check {
+  background-image: url('../images/icons/check.png');
+}
+.icon_edit {
+    background-image: url('../images/icons/bullet_wrench.png');
+}
+.icon_delete {
+    background-image: url('../images/icons/delete.png');
+}
+.icon_notice {
+    background-image: url('../images/icons/emoticon_happy.png');
+}
+.icon_print {
+  background-image: url('../images/icons/print.png');
+}
+.icon_report {
+    background-image: url('../images/icons/report.png');
+}
+.icon_search {
+  background-image: url('../images/icons/search.png');
+}
+.icon_trash {
+  background-image: url('../images/icons/trash.png');
+}
+.icon_workflow {
+  background-image: url('../images/icons/workflow.png');
+}
+.icon_add_attachment {
+    background-image: url('../images/icons/page_add.png');
+}
+.icon_user_sync {
+    background-image: url('../images/icons/group_link.png');
+}
+.icon_loading {
+    background-image: url('../images/icons/loading.gif');
+}
+.icon_connect {
+    background-image: url('../images/icons/connect.png');
+}
+.icon_left {
+    background-image: url('../images/icons/left.png');
+}
+.icon_left_disabled {
+    background-image: url('../images/icons/left_disabled.png');
+}
+.icon_right {
+    background-image: url('../images/icons/right.png');
+}
+.icon_right_disabled {
+    background-image: url('../images/icons/right_disabled.png');
+}
+.icon_error {
+    background-image: url('../images/icons/error.png');
+}
+
+.icon_filter {
+    background-image: url('../images/icons/filter.png');
+}
+.icon_filter_cancel {
+    background-image: url('../images/icons/filter_delete.png');
+}
+
+/**
+ * Hidden
+ * Do not display this item
+ */
+.block.hidden {
+    display: none;
+}
+
+/** Left
+ * Item floated left
+ */
+.left {
+    float: left;
+}
+
+/** Right
+ * Item floated right
+ */
+.right {
+    float: right;
+}
+
+/** Nowrap
+ * Prevent the item from wrapping
+*/
+.nowrap {
+  white-space: nowrap;
+}
+
+/** Filterfields
+ * Make the filter text fields more distinct.
+*/
+.filterfield {
+    background-color: #FFF9C9;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-image: url('../images/icons/magnifier_mono.png');
+}

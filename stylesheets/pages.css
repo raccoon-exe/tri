@@ -1,0 +1,37 @@
+/** Pages CSS
+ * Layout for page-level structures (header, main, sidebar, etc).
+ */
+
+/* Page sections */
+.page {
+    padding: 10px;
+}
+.header {
+    margin: 10px 0 0 200px;
+}
+.headerb {
+    margin: 10px 0 0 0px;
+    width: 100%;
+    overflow: auto;
+    clear: both;
+}
+.main {
+    margin: 10px 10px 0 200px;
+}
+.mainb {
+    margin: 200px 10px 10 0px;
+    display: block;
+}
+
+/* Left column - used for app badge and navigation */
+.left_column {
+    float: left;
+    margin-right: 10px;
+    width: 225px;
+}
+.left_column .block {
+    width: 225px;
+}
+.left_column .block .block {
+    width: 100%;
+}

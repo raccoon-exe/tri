@@ -1,0 +1,37 @@
+/** Overrides CSS
+ * Any non-standard overrides go here. Usually this will be used to create a non-generic
+ * style that only needs to be used in one place. Most of these will likely reference an
+ * element id directly.
+*/
+
+/* Keep the logout button from overlapping messages */
+#logout {
+    height: 15px;
+}
+
+h2.table_heading {
+	color: #6FA6FC;
+}
+
+/* Add the "editing" class to a tr to show the inputs instead of the data. */
+tr.editing .table_field,
+tr.editing .table_controls {
+    display: block;
+}
+tr.editing .table_data {
+    display: none;
+}
+tr .table_field,
+tr .table_controls,
+tr.editing .table_data {
+    display: none;
+}
+
+/* Make trs hidable */
+tr.hidden {
+    display: none;
+}
+
+.red_text {
+    color: #FF0000;
+}

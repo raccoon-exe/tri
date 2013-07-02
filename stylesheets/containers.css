@@ -1,0 +1,159 @@
+/** Containers CSS
+ * A set of reusable component containers. Containers are intended to be generic
+ * elements capable of containing any Content.
+ */
+
+/** Block
+ * Block is the basic container.
+ * Blocks expect the following structure:
+ *   <div class="block">
+ *      <div class="head">Block heading. Optional.</div>
+ *      <div class="body">Block contents. Required.</div>
+ *   </div>
+ */
+.block {
+    margin-bottom: 10px;
+}
+.block .head {
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+/** Portlet
+ * Portlet extends Block to add basic chrome.
+ * Suitable for navigation lists.
+ */
+.block.portlet {
+    border-left: 3px solid #dfdfdf;
+    padding: 10px 10px 10px 7px;
+}
+.block.portlet .head {
+    color: #aaa;
+    font-weight: bold;
+    line-height: 1;
+    margin-top: -10px;
+}
+.block.portlet .head h1,
+.block.portlet .head h2,
+.block.portlet .head h3,
+.block.portlet .head h4,
+.block.portlet .head h5,
+.block.portlet .head h6 {
+    color: #aaa;
+    font-weight: bold;
+    display: inline;
+}
+
+/** Blue
+ * A blue-colored container. A semantic name for this would be really neat.
+ */
+.block.blue {
+    background-color: #f2f8fe;
+    border-color: #6fa6fc;
+}
+.block.blue .head h1,
+.block.blue .head h2,
+.block.blue .head h3,
+.block.blue .head h4,
+.block.blue .head h5,
+.block.blue .head h6 {
+    color: #6fa6fc;
+}
+
+/** Dark Blue
+ * A dark blue colored container. A semantic name for this would be really neat.
+ */
+.block.dark_blue {
+    background-color: #6fa6fc;
+    border-color: #fff;
+    color: #DBEDFD;
+}
+.block.dark_blue .head h1,
+.block.dark_blue .head h2,
+.block.dark_blue .head h3,
+.block.dark_blue .head h4,
+.block.dark_blue .head h5,
+.block.dark_blue .head h6,
+.block.dark_blue a {
+    color: #fff;
+}
+
+/** Gray
+ * A gray-colored container. A semantic name for this would be really neat.
+ */
+.block.gray {
+    background-color: #fafafa;
+    border-color: #dfdfdf;
+}
+
+/** Message
+ * Message extends Block to add more visual emphasis.
+ * Suitable for messages.
+ */
+.block.message {
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 10px;
+    padding: 9px;
+}
+
+/** Fields
+ * A container of field blocks. Useful for show and edit screens.
+ */
+.block.fields {
+    border: 1px solid;
+    padding: 10px 0 0 10px;
+}
+.block.fields>.head {
+    padding-right: 10px;
+}
+.block.fields .body .block {
+    margin: 0 10px 10px 0;
+    vertical-align: top;
+}
+.block.fields .body .block.fields {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/** Field
+ * A block containing data for a model field.
+ */
+.block.field {
+    margin: 10px 0 0 10px;
+    width: 180px;
+}
+.block.field .head {
+    font-weight: bold;
+}
+
+/** Small Field
+ * Extends Fields to take up half the space of a normal field.
+ */
+.block.field.small_field {
+    width: 85px;
+}
+
+/** Large Field
+ * Extends Fields to take up 1.5 times the space as a normal field.
+ */
+.block.field.large_field {
+    width: 275px;
+}
+
+/** Larger Field
+ * Extends Fields to take up 2 times the space as a normal field.
+ */
+.block.field.larger_field {
+    width: 360px;
+}
+
+/** Inline
+ * Makes the element appear inline
+ */
+.block.inline {
+    display: inline-block;
+    *display: inline;
+}

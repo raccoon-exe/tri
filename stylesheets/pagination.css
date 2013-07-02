@@ -1,0 +1,13 @@
+/** Pagination CSS
+ * Styling for Pagination.
+ */
+
+.pagination {
+    margin-top: 10px;
+}
+.pagination a {
+    margin: 0 2px;
+}
+.pagination .current {
+    font-weight: bold;
+}

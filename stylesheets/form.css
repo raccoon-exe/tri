@@ -1,0 +1,84 @@
+/** Core CSS
+ * Styling for inputs and forms.
+*/
+
+/* Fields
+*/
+form .field {
+    margin-bottom: 1ex;
+}
+form .block.field .field {
+    margin-bottom: 0;
+}
+form .field label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Checkboxes
+*/
+form .field div.check_box label {
+    display: inline;
+    margin-left: 3px;
+    font-weight: normal;
+}
+form .field input[type=checkbox] {
+    vertical-align: baseline;
+}
+table th.check_box,
+table td.check_box {
+    width: 20px; /* text box columns in tables should be small */
+}
+
+/* Text Areas
+*/
+form .field textarea {
+    vertical-align: top;
+}
+form .field textarea.expand {
+    width: 100%;
+}
+
+/* Selects
+*/
+form .block.field select {
+    max-width: 100%;
+}
+
+/* Multi checkbox fields
+*/
+.field.multi_check_box .item {
+    white-space: nowrap;
+}
+.field.multi_check_box .item label {
+    font-weight: normal;
+    display: inline;
+}
+
+/* Required fields
+*/
+form .required input,
+form .required select,
+form .required textarea {
+    background-color: #ff0;
+}
+
+/* Buttons
+ * Style a button inputs to look like a link
+*/
+input.link {
+    border: none;
+    color: #0c50b9;
+    cursor: hand;
+    cursor: pointer;
+    display: inline-block; /* Makes the hover underline work in Firefox */
+}
+input.link:hover {
+    text-decoration: underline;
+}
+
+/* Form controls
+*/
+form p .form_control {
+    margin-right: 5px;
+}
